@@ -1,0 +1,21 @@
+/**
+ * @name Novum Tweaks
+ * @version 1.1
+ * @description Tweaks for Novum
+ * @author MurderAxo
+ **/
+ 
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+ 
+ p, h1, h2, h3 {
+  font-family: "Jaro", sans-serif;
+  font-weight: 900;
+  font-style: bold!important;
+ }
+
+.unreadPill__715fc, .divider__8cf56 .beforeGroup__1e5e5 .divider_b9338f .isUnread__6f880 {
+  height: 1px!important;
+  padding-top: 2px!important;
+  padding-bottom: 2px!important;
+  margin: 0px!important
+}

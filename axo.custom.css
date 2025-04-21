@@ -1,0 +1,33 @@
+/**
+ * @name Axo's Customizations
+ * @version 1.5
+ * @description Customizations for all themes
+ * @author MurderAxo
+ **/
+ 
+*[class*="modeUnreadImportant"] *[class*="name"], a[aria-label*="unread"] * {
+   color: red!important;
+   fill: red!important;
+   font-weight:1000!important
+}
+
+*[class*="modeMuted"] div * {
+	color: slategrey!important;
+	fill: slategrey!important;
+	font-weight:500!important
+}
+
+.recentsIcon__3c4cf { display: none!important }
+
+*[class*="contents"] *[id*="message-content"] *[class*="hidden"] {
+    background: hsl(237, 16%, 23%);!important
+}
+
+div[class*="callAvatarMaskContainer"] svg[class*="status"] {
+	background: transparent!important;
+	scale: 125%
+}
+
+div[class*="callAvatarMaskContainer"] svg[class*="status"] path {
+	fill: red!important;
+}

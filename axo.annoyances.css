@@ -1,0 +1,99 @@
+/* ==UserStyle==
+@name           NoAnnoyance
+@namespace      https://discord.com/app
+@version        3.5
+@description    Hides annoying features and Nitro upsells
+@author         MurderAxo
+==/UserStyle== */
+/* Stylus compatibility */
+
+/**
+ * @name NoAnnoyance
+ * @version 3.5
+ * @description Hides annoying features and Nitro upsells
+ * @author MurderAxo
+**/
+/* Vencord / BetterDiscord compatibility */
+
+/* PLEASE READ */
+/* IF YOU INTEND ON USING THIS WITH STYLUS OR ANOTHER USER-STYLE MANAGER, YOU DO NOT NEED TO MODIFY THIS AT ALL */
+/* IF YOU INTEND ON USING THIS WITH VENCORD OR BETTERDISCORD'S BUILT-IN CSS FEATURES, REMOVE THE @-moz-document LINE AND THE LAST "}" */
+
+	
+	/* "Create a thread" suggestion bar */
+	*[class*="threadSuggestionBar_"] {
+	  display:none!important
+	}
+	
+	/* Hides the "send a gift" button */
+	*[aria-label="Send a gift"] {
+	  display:none!important
+	}
+	
+	/* "Nitro" settings menu */
+	.premiumTab__57bdc, *[aria-label="Nitro"], .premiumTab_ad0913, *[class*="premiumTab_"] {
+		display: none!important
+	}
+	
+	/* Social links */
+	.socialLinks_c1fc99 {
+		display: none!important
+	}
+	
+	/* "Give your profile a fresh look" */
+	.shopForAllBackgroundImage__009d9 {
+		display: none!important
+	}
+	
+	/* Try out Nitro! in profiles */
+	.tryItOutSection__0f9fb {
+		display: none!important
+	}
+	
+	/* Get Nitro button */
+	.ctaButton_abf121 {
+	  display: none
+	}
+	
+	/* "SHOP" / "NITRO" button in DM list */
+	*[href="/shop"], *[href="/store"] {
+	  display: none!important
+	}
+	
+	/* "Make unique profiles for each server" */
+	/* Weird thing about this one. It hides the overlay and border box. If you don't have Nitro, the various input forms will stay greyed out, though */
+	.upsellOverlay__688e8, *[class*="upsellOverlay__"] {
+	  display: none!important
+	}
+	
+	/* Emoji upsell */
+	.emojiPickerListWrapper_e15ac7 .premiumUpsell_e1bfd9 {
+	  display: none!important
+	}
+	
+	/* Emoji upsell */
+	.categorySectionNitroLocked_cf3b81, .categorySectionNitroLocked__5b287 {
+	  background: none!important
+	}
+	
+	/* Emoji upsell */
+	.nitroTopDividerContainer__4c8fd, .upsellContainer__3c02a, .upsellContainer__15a05, .nitroTopDividerContainer_b829ac, .emojiLockIconContainer_ed2f80, .categoryItemLockIcon__64b4b, .categoryItemLockIconContainer__61fa5 {
+	    display: none!important
+	}
+	
+	/* VC Experiments Warning */
+	#vc-experiments-warning-card {
+		display: none!important
+	}
+	
+	/* Must be Valorent */
+	.container__686c4 {
+	  display:none!important
+	}
+  
+  /* Should we mark this channel as unread...? */
+  div[class*="notice__"] {
+    display: none!important
+  }
+/* Using Vencord or BetterDiscord's CSS features? Comment out the line above */
+
