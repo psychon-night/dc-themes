@@ -1,0 +1,57 @@
+/**
+ * @name Bearable
+ * @version 1.0
+ * @description Pulls in additional CSS tweaks, mostly from the Vencord server
+ * @author MurderAxo
+ **/
+
+/* Aligned Chat Box and Typing indicator */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1354227244834492486 */
+.container_c48ade {
+	--custom-chat-input-margin-bottom: 22px;
+ }
+ :root {
+	--custom-channel-textarea-text-area-height: 42px;
+ }
+ .visual-refresh .base_b88801 {
+	font-size: 13.5px;
+	height: 22px;
+	display: flex !important;
+	align-items: center !important;
+ }
+
+/* Hide nameplates */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1356780198405734471 */
+[style^="background: linear-gradient(90deg"]:has([src*="/nameplates/"]) { display: none; }
+[class*="dm_"]:has([class*="linkPlated_"]) {
+    & [class*="linkPlated_"] { padding-right: var(--space-16); }
+    & [class*="closeButtonPlated_"] {
+        opacity: 0.7;
+        &:hover { opacity: 1; }
+        & [class^="innerCloseButtonPlated"] {
+            opacity: unset; 
+            background: none;
+            & svg {
+                color: inherit;
+                &:is(:hover, :focus-within) { color: var(--interactive-hover); }
+            }
+        }
+    }
+}
+
+/* Hide activity status, since server owners can't seem to figure out HOW TO TURN IT OFF */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196 */
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+  display: none;
+}
+
+/* Fixes non-round server icons */
+/* https://discord.com/channels/1015060230222131221/1354361432472555623/1354407715329409024 */
+.visual-refresh .closedFolderIconWrapper__48112>div {
+	border-radius: 50% !important;
+	width: 16px;
+	height: 16px;
+	font-size: 6px !important;
+	line-height: 16px;
+ }
