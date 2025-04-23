@@ -31,3 +31,7 @@ div[class*="callAvatarMaskContainer"] svg[class*="status"] {
 div[class*="callAvatarMaskContainer"] svg[class*="status"] path {
 	fill: red!important;
 }
+
+div[class*="threadSuggestionBar__"] {
+	display: none!important
+}
